@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 import course1 from '../../assets/courses/course1.jpg'
 import course2 from '../../assets/courses/course2.jpg'
 import course3 from '../../assets/courses/course3.jpg'
@@ -16,41 +17,59 @@ const Home = () => {
                     src={course1}
                     alt="First slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
                     src={course2}
                     alt="Second slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
                     src={course3}
                     alt="Third slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
                     src={course4}
                     alt="Third slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
                     src={course5}
                     alt="Third slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"
                     src={course6}
                     alt="Third slide"
                 />
+                <Carousel.Caption>
+                    <Button variant="warning">See All Courses</Button>
+                </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
     );
