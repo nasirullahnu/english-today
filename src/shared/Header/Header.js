@@ -23,10 +23,8 @@ const Header = () => {
                         <Link href="#pricing">dark mode</Link>
                     </Nav>
                     <Nav className='head-links'>
-                        <Link href="#deets">More deets</Link>
-                        <Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Link>
+                        <Link to='/login'>Login</Link>
+                        <Link to='/register'>Register</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
