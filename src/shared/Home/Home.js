@@ -7,6 +7,7 @@ import course3 from '../../assets/courses/course3.jpg'
 import course4 from '../../assets/courses/course4.jpg'
 import course5 from '../../assets/courses/course5.jpg'
 import course6 from '../../assets/courses/course6.jpg'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -18,7 +19,9 @@ const Home = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1000}>
@@ -28,7 +31,9 @@ const Home = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1000}>
@@ -38,7 +43,9 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1000}>
@@ -48,7 +55,9 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1000}>
@@ -58,7 +67,9 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={1000}>
@@ -68,7 +79,9 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button variant="warning">See All Courses</Button>
+                    <Button className='btn btn-warning'>
+                        <Link to='/courses'>ALL COURSES</Link>
+                    </Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
