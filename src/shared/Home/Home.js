@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <Carousel>
+        <Carousel className='w-75 mx-auto mt-2'>
             <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100"

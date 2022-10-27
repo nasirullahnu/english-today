@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
@@ -10,6 +10,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 const Register = () => {
     const { user, providerLogin, createUser } = useContext(AuthContext)
     const googleProvider = new GoogleAuthProvider()
+    const navigate = useNavigate();
 
     // sign in with google 
     const handleGoogleLogin = () => {
@@ -17,6 +18,7 @@ const Register = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
+                navigate('/')
             })
             .catch(error => console.error(error))
     }
@@ -34,6 +36,7 @@ const Register = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
+                navigate('/')
             })
             .catch(e => console.error(e))
     }

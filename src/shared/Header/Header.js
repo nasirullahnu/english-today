@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Button, Image } from 'react-bootstrap';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import { FaUserAlt } from 'react-icons/fa';
+import { FaUserAlt , FaMoon } from 'react-icons/fa';
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -31,7 +31,7 @@ const Header = () => {
                         <Link href="#pricing">FAQ</Link>
                         <Link href="#pricing">Blog</Link>
                         <Link href="#pricing">About</Link>
-                        <Link href="#pricing">dark mode</Link>
+                        <Link href="#pricing">dark mode <FaMoon></FaMoon></Link>
                     </Nav>
                     <Nav className='head-links'>
                         <Nav.Link href="#deets">
