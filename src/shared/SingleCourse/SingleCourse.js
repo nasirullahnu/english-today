@@ -3,8 +3,9 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const SingleCourse = ({ single }) => {
-    const { title, total_video, students, rating, publish_date, price, mentor, img, duration, details } = single
     console.log(single)
+    const { _id, category_id ,title, total_video, students, rating, publish_date, price, mentor, img, duration, details } = single
+    // console.log(single)
     return (
         <div>
             <div className='p-2 border border-rounded mb-3 '>
@@ -30,7 +31,9 @@ const SingleCourse = ({ single }) => {
                             <Button className='btn btn-info'>
                                 <Link to='/courses'>Back</Link>
                             </Button>
-                            <Button>Check Out</Button>
+                            <Button className='btn btn-info'>
+                                <Link to={`/checkout/${category_id}`}>Check Out</Link>
+                            </Button>
                         </div>
                     </div>
                 </div>

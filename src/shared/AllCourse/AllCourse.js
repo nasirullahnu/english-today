@@ -5,7 +5,7 @@ import './AllCourse.css'
 
 const AllCourse = () => {
     const categoryCourse = useLoaderData();
-    console.log(categoryCourse);
+    // console.log(categoryCourse);
     return (
         <div>
             <h4>Our Special English Courses</h4>
