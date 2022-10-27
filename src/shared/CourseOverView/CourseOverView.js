@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CourseOverView = ({ overview }) => {
     const { _id, category_id, title, img } = overview
@@ -9,7 +10,9 @@ const CourseOverView = ({ overview }) => {
             <img src={img} alt="" srcset="" />
             <div className='d-flex justify-content-evenly mt-2'>
                 <h4>{title}</h4>
-                <Button>Details</Button>
+                <Button>
+                    <Link className='text-white' to={`/category/${category_id}`}>Details</Link>
+                </Button>
             </div>
         </div>
     );

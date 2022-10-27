@@ -14,7 +14,7 @@ const CourseDetails = ({course}) => {
    console.log(course)
     return (
         <div>
-            <h4>all courses</h4>
+            <h4>Our Courses</h4>
             {
                 allCourses.map(overview => <CourseOverView 
                 key={overview.id}
