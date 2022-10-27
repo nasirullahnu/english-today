@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CourseCards = ({course}) => {
-    const {id, title, img, } = course
+    const {id, name, img, } = course
     return (
         <div>
-            <p>{title}</p>
-            <img src={img} alt="" srcset="" />
+            <p><Link to={`/category/${id}`}>{name}</Link> </p>
         </div>
     );
 };
