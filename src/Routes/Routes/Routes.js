@@ -7,6 +7,7 @@ import Courses from "../../shared/Courses/Courses";
 import Home from "../../shared/Home/Home";
 import Login from "../../shared/Login/Login";
 import Register from "../../shared/Register/Register";
+import PrivateRoute from "../PrivateRoutes/PrivateRoutes";
 
 
 export const routes = createBrowserRouter([
@@ -42,7 +43,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path : 'checkout/:id',
-                element : <Checkouts></Checkouts>,
+                element : <PrivateRoute><Checkouts></Checkouts></PrivateRoute>,
                 loader : ({params}) => fetch(`http://localhost:5000/checkouts/${params.id}`)
                 
             }
