@@ -51,7 +51,7 @@ const Register = () => {
             <h4>Registration</h4>
             <Form onSubmit={handleSubmit} className='w-50 mx-auto form'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Your Name</Form.Label>
+                    <Form.Label>Full Name</Form.Label>
                     <Form.Control name='name' type="text" placeholder="Your Name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
