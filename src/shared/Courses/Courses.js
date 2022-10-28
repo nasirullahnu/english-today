@@ -21,7 +21,7 @@ const Courses = () => {
         <Container>
                 <Row>
                     <Col lg="4" className='d-none d-lg-block'>
-                    <h2>Total Courses {courses.length}</h2>
+                    <h2>See Courses Details</h2>
                         {
                             courses.map(course => <CourseCards 
                                 key={course.id}

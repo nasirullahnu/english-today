@@ -32,7 +32,7 @@ const SingleCourse = ({ single }) => {
                                 <Link to='/courses'>Back</Link>
                             </Button>
                             <Button className='btn btn-info'>
-                                <Link to={`/checkout/${category_id}`}>Check Out</Link>
+                                <Link to={`/checkout/${category_id}`}>Get Premium</Link>
                             </Button>
                         </div>
                     </div>
