@@ -28,10 +28,10 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto head-links">
                         <Link to='/courses'>ALL COURSES</Link>
-                        <Link href="#pricing">FAQ</Link>
-                        <Link href="#pricing">Blog</Link>
-                        <Link href="#pricing">About</Link>
-                        <Link href="#pricing">dark mode <FaMoon></FaMoon></Link>
+                        <Link to='/faq'>FAQ</Link>
+                        <Link to='/blog'>Blog</Link>
+                        <Link to='/about'>About</Link>
+                        <Link to="/dark">dark mode <FaMoon></FaMoon></Link>
                     </Nav>
                     <Nav className='head-links'>
                         <Nav.Link href="#deets">
