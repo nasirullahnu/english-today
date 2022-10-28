@@ -8,6 +8,7 @@ import course4 from '../../assets/courses/course4.jpg'
 import course5 from '../../assets/courses/course5.jpg'
 import course6 from '../../assets/courses/course6.jpg'
 import { Link } from 'react-router-dom';
+import './Home.css'
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
@@ -31,7 +32,7 @@ const Home = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
@@ -43,7 +44,7 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
@@ -55,7 +56,7 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
@@ -67,7 +68,7 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
@@ -79,7 +80,7 @@ const Home = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <Button className='btn btn-warning'>
+                    <Button className='btn btn-primary links'>
                         <Link to='/courses'>ALL COURSES</Link>
                     </Button>
                 </Carousel.Caption>
