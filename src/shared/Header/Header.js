@@ -23,7 +23,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <img style={{height: '20px', marginRight: '5px'}} src={logo2} alt="" srcset="" />
-                <Navbar.Brand><Link to="/">English-Today</Link></Navbar.Brand>
+                <Navbar.Brand className='head-links'><Link to="/">English-Today</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto head-links">
@@ -38,7 +38,7 @@ const Header = () => {
                             {
                                 user?.uid ?
                                     <>
-                                        <span> {user?.displayName}</span>
+                                        <span className='m-3'> {user?.displayName}</span>
                                         <Button onClick={handleLogOut}>Log Out</Button>
                                     </>
                                     :

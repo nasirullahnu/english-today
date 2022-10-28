@@ -1,0 +1,11 @@
+.titles p a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+.titles p{
+    background-color: rgb(61, 117, 237);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 6px;
+}

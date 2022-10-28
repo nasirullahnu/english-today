@@ -3,7 +3,6 @@ import { useLoaderData } from 'react-router-dom';
 import './Checkouts.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { FaFileDownload } from 'react-icons/fa';
 
 const Checkouts = () => {
     const checkoutData = useLoaderData()
@@ -21,7 +20,6 @@ const Checkouts = () => {
                         <h4>Price : {price}</h4>
                     </Card.Text>
                     <Button variant="primary">Enroll</Button>
-                    <FaFileDownload></FaFileDownload>
                 </Card.Body>
             </Card>
             {/* <h2>Enrol Our Course</h2>

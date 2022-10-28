@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { FaDownload } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './SingleCourse.css'
 
 const SingleCourse = ({ single }) => {
     console.log(single)
@@ -27,12 +29,15 @@ const SingleCourse = ({ single }) => {
                         <h4>Mentor : {mentor.name}</h4>
                         <p>Age : {mentor.age}</p>
                         <p>Qualification : {mentor.qualification}</p>
-                        <div className='m-3'>
-                            <Button className='btn btn-info'>
+                        <div>
+                            <Button className='btn btn-info m-1 btns'>
                                 <Link to='/courses'>Back</Link>
                             </Button>
-                            <Button className='btn btn-info'>
+                            <Button className='btn btn-info m-1 btns'>
                                 <Link to={`/checkout/${category_id}`}>Get Premium</Link>
+                            </Button>
+                            <Button className='btn btn-info'>
+                               <FaDownload></FaDownload> Download 
                             </Button>
                         </div>
                     </div>
