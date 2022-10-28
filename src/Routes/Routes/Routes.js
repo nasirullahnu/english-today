@@ -5,6 +5,7 @@ import Blog from "../../shared/Blog/Blog";
 import Checkouts from "../../shared/Checkouts/Checkouts";
 import CourseDetails from "../../shared/CourseDetails/CourseDetails";
 import Courses from "../../shared/Courses/Courses";
+import Faq from "../../shared/Faq/Faq";
 import Home from "../../shared/Home/Home";
 import Login from "../../shared/Login/Login";
 import Register from "../../shared/Register/Register";
@@ -35,6 +36,10 @@ export const routes = createBrowserRouter([
             {
                 path : 'blog',
                 element : <Blog></Blog>
+            },
+            {
+                path : 'faq',
+                element : <Faq></Faq> ,
             },
             {
                 path: 'details/:id',
