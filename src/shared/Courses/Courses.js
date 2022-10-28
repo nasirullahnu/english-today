@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import CourseCards from '../CourseCards/CourseCards';
 import CourseDetails from '../CourseDetails/CourseDetails';
 
@@ -12,7 +11,7 @@ const Courses = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:5000/courses')
+        fetch('https://english-today-server.vercel.app/courses')
         .then(res => res.json())
         .then(data => setCourses(data))
     },[])

@@ -8,7 +8,7 @@ import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Register = () => {
-    const { user, providerLogin, createUser } = useContext(AuthContext)
+    const {providerLogin, createUser } = useContext(AuthContext)
     const googleProvider = new GoogleAuthProvider()
     const navigate = useNavigate();
     const location = useLocation();

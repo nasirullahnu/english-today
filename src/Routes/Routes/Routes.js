@@ -44,17 +44,17 @@ export const routes = createBrowserRouter([
             {
                 path: 'details/:id',
                 element : <CourseDetails></CourseDetails>,
-                loader : ({params}) => fetch(`http://localhost:5000/courses/${params.id}`),
+                loader : ({params}) => fetch(`https://english-today-server.vercel.app/courses/${params.id}`),
             },
             {
                 path : 'category/:id',
                 element : <AllCourse></AllCourse>,
-                loader : ({params}) => fetch(`http://localhost:5000/category/${params.id}`) 
+                loader : ({params}) => fetch(`https://english-today-server.vercel.app/category/${params.id}`) 
             },
             {
                 path : 'checkout/:id',
                 element : <PrivateRoute><Checkouts></Checkouts></PrivateRoute>,
-                loader : ({params}) => fetch(`http://localhost:5000/checkouts/${params.id}`)
+                loader : ({params}) => fetch(`https://english-today-server.vercel.app/checkouts/${params.id}`)
                 
             }
         ],
