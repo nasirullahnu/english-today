@@ -53,6 +53,10 @@ export const routes = createBrowserRouter([
                 
             }
         ],
+    },
+    {
+        path : '*',
+        element : <div><h1 className="text-danger">There is nothing your are searching for, please try again</h1></div> ,
     }
 ]);
 
