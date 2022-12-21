@@ -1,8 +1,10 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Button } from 'react-bootstrap';
 import { FaDownload } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Pdf from "react-to-pdf";
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import './SingleCourse.css'
 
 const ref = React.createRef();
@@ -11,6 +13,10 @@ const SingleCourse = ({ single }) => {
     console.log(single)
     const { category_id, title, total_video, students, rating, publish_date, price, mentor, img, duration, details } = single
     // console.log(single)
+    const {loading} = useContext(AuthContext);
+    if(loading){
+        return <h1 className='text-xl'>Loading...</h1>
+    }
     return (
         <div>
             <div className='p-2 border border-rounded mb-3 '>
